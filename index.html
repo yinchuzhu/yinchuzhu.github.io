@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yinchu Zhu</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <meta name="description" content="Economist — publications, working papers, and CV">
+
+<style>
+html {
+
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #000000 !important;
+
+    max-width: 950px;
+    margin: 0 auto;
+    
+    
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+  a {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  a:hover {
+    border-bottom-color: rgba(255,255,255,0.6);
+  }
+
+  h1, h2, h3 {
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+
+  body {
+
+  color: #000000 !important;
+
+    max-width: 950px;
+    margin: 0 auto;
+    
+    
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+  p {
+    margin-bottom: 1.1em;
+  }
+  .list li {
+    margin-bottom: 0.8em;
+  }
+
+
+  h1, h2, h3 {
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+
+  /* Smaller font and tighter spacing just for the Papers section */
+  #papers { font-size: 16px; line-height: 1.4; }
+  #papers .list li { margin-bottom: 0.4em; }
+
+
+  body {
+
+  color: #000000 !important;
+
+    max-width: 950px;
+    margin: 0 auto;
+    
+    
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+  
+
+
+
+  h1, h2, h3 {
+
+  }
+
+
+  a, a:visited { color: #000000; }
+
+
+  h1, h2 {
+    color: #000000;
+  }
+
+
+  a.journal, a.journal:visited, a.journal:hover {
+    color: #003399 !important;
+  }
+
+
+  h1, h2 {
+    font-weight: 600;
+  }
+
+
+  a, a:visited, a:hover {
+    color: #ffffff !important;
+  }
+
+
+  p, li {
+    color: #000000;
+  }
+
+
+  /* Three-line paper entries */
+  .paper { margin-bottom: 0.9em; list-style: none; }
+  .list { padding-left: 0; }
+  .paper-title { font-weight: 600; font-size: 1.05em; line-height: 1.4; }
+  .paper-authors { color: #dddddd; margin-top: 2px; }
+  .paper-meta { color: #cccccc; margin-top: 2px; }
+
+
+  a, a:visited, a:hover, a.journal, a.journal:visited, a.journal:hover {
+    color: #000000 !important;
+    text-decoration: none;
+  }
+
+
+html { background-color: #f5f0e6 !important; }
+body { background-color: #f5f0e6 !important; color: #000000 !important; }
+a, a:visited, a:hover { color: #000000 !important; text-decoration: none; }
+h1, h2, h3, p, li { color: #000000 !important; }
+
+
+  .paper-authors, .paper-meta { color: #000000 !important; }
+
+
+  body { font-size: 140% !important; }
+  .paper { margin-bottom: 2em !important; }
+
+
+  .section-heading {
+    font-size: 1.8em !important;
+    font-weight: 800 !important;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #000000 !important;
+  }
+
+
+  .subtitle {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+    color: #000000 !important;
+  }
+
+
+  /* Make Working Papers titles bold and same size as published titles */
+  .working-papers li > a {
+    font-weight: 700 !important;
+    font-size: 1.05em !important;
+  }
+
+
+  .paper-meta {
+    color: #1d54a1 !important;
+  }
+
+  /* Unifies color for the entire third line of publication entries */
+/* Unifies color and font for the entire third line */
+.paper-meta, .paper-meta span {
+  color: #1d54a1 !important;
+  font-family: Arial, sans-serif; /* Adds the new font */
+}
+  
+  /* Add the new rule here */
+  .paper-meta span {
+    font-style: italic;
+  }
+
+/* --- About Section & Bio --- */
+
+/* Two-column layout container */
+#about {
+  display: flex;
+  align-items: flex-start; 
+  gap: 2em;              
+  margin-top: 3em;
+  margin-bottom: 3em;
+  flex-direction: row-reverse; /* This line reverses the column order */
+}
+
+/* Reduces the space between the bio and the links below it */
+.about-text > p:first-of-type {
+  margin-bottom: 0.5em; /* The default was 1.1em, adjust as needed */
+  font-size: 1.1rem; /* Add this line */
+}
+
+/* Sets the font size for the email/CV line */
+.about-text p.small {
+  font-size: 1.1rem; 
+}
+
+/* Add the new footer styles here */
+footer {
+  margin-top: 4em;      
+  padding: 2em 0;       
+  text-align: center;   
+  color: #888888;        
+}
+
+/* The photo in the left column */
+.photo {
+  width: 270px; /* You can adjust this value to make the photo bigger or smaller */
+  height: auto;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+/* The right column for all text */
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.name-affiliation .subtitle {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* Add the new rule here to reduce the gap */
+p.small {
+  margin-bottom: 0.4em;
+}
+
+
+</style>
+
+
+<style>
+html {
+
+  }
+
+  body {
+
+  color: #000000 !important;
+
+    max-width: 950px;
+    margin: 0 auto;
+    
+    
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+  a {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  a:hover {
+    border-bottom-color: rgba(255,255,255,0.6);
+  }
+  .list li {
+    margin-bottom: 0.6em;
+  }
+
+  h1, h2, h3 {
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+
+  body {
+
+  color: #000000 !important;
+
+    max-width: 950px;
+    margin: 0 auto;
+    
+    
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+  p {
+    margin-bottom: 1.1em;
+  }
+  .list li {
+    margin-bottom: 0.8em;
+  }
+
+
+  h1, h2, h3 {
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+
+  /* Smaller font and tighter spacing just for the Papers section */
+  #papers { font-size: 16px; line-height: 1.4; }
+  #papers .list li { margin-bottom: 0.4em; }
+
+
+  body {
+
+  color: #000000 !important;
+
+    max-width: 950px;
+    margin: 0 auto;
+    
+    
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+}
+  
+
+
+  h1, h2, h3 {
+
+  }
+
+
+  a, a:visited { color: #000000; }
+
+
+  h1, h2 {
+    color: #000000;
+  }
+
+
+  a.journal, a.journal:visited, a.journal:hover {
+    color: #003399 !important;
+  }
+
+
+  h1, h2 {
+    font-weight: 600;
+  }
+
+
+  a, a:visited, a:hover {
+    color: #ffffff !important;
+  }
+
+
+  p, li {
+    color: #000000;
+  }
+
+
+  /* Three-line paper entries */
+  .paper { margin-bottom: 0.9em; list-style: none; }
+  .list { padding-left: 0; }
+  .paper-title { font-weight: 600; font-size: 1.05em; line-height: 1.4; }
+  .paper-authors { color: #dddddd; margin-top: 2px; }
+  .paper-meta { color: #cccccc; margin-top: 2px; }
+
+
+  a, a:visited, a:hover, a.journal, a.journal:visited, a.journal:hover {
+    color: #000000 !important;
+    text-decoration: none;
+  }
+
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main id="top" class="container">
+    
+    <section id="about">
+      <img class="photo" src="profile.jpg" alt="Portrait of Yinchu Zhu" />
+      <div class="about-text">
+        <div class="name-affiliation">
+          <h1>Yinchu Zhu</h1>
+          <div class="subtitle">Assistant Professor of Economics<br>Brandeis University</div>
+        </div>
+        <p>My main research area is theory and methodology in econometrics, statistics and machine learning. Currently, a major focus is high-dimensional models. Applications of my research include big data analysis, causal inference, economics and finance.</p>
+        <p class="small">
+          <a href="mailto:yinchuzhu@brandeis.edu">Email</a>: yinchuzhu@brandeis.edu &nbsp;|&nbsp; <a href="Yinchu_Zhu_CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="papers">
+
+      <div class="card">
+        <h5><div class="section-heading">Published & Accepted Papers</div></h5>
+        <ul class="list">
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1080/01621459.2024.2335591" target="_blank" rel="noopener noreferrer">Statistical Inference For Noisy Matrix Completion Incorporating Auxiliary Information</a></div>
+          <div class="paper-authors">with Shujie Ma, Po-Yao Niu and Yichong Zhang.</div>
+          <div class="paper-meta"><span>Journal of the American Statistical Association</span>, 120(549):343–355, 2025.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1016/j.ijforecast.2023.08.001" target="_blank" rel="noopener noreferrer">Comparing forecasting performance with panel data</a></div>
+          <div class="paper-authors">with Rioting Qu and Allan Timmermann.</div>
+          <div class="paper-meta"><span>International Journal of Forecasting</span>, 40(3):918–941, 2024.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1177/10591478231224942" target="_blank" rel="noopener noreferrer">Optimal data-driven hiring with equity for underrepresented groups</a></div>
+          <div class="paper-authors">with Ilya Ryzhov.</div>
+          <div class="paper-meta">Accepted at <span>Production and Operations Management</span></div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1214/23-AOS2293" target="_blank" rel="noopener noreferrer">Inference for low-rank models</a></div>
+          <div class="paper-authors">with Victor Chernozhukov, Christian Hansen and Yuan Liao.</div>
+          <div class="paper-meta"><span>Annals of Statistics</span>, 51(3):1309–1330, 2023.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://www.pnas.org/doi/abs/10.1073/pnas.2300458120" target="_blank" rel="noopener noreferrer">Toward personalized inference on individual treatment effects</a></div>
+          <div class="paper-authors">with Victor Chernozhukov and Kaspar Wüthrich.</div>
+          <div class="paper-meta"><span>Proceedings of the National Academy of Sciences</span>, 120(7):e2300458120</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1073/pnas.2107794118" target="_blank" rel="noopener noreferrer">Distributional conformal prediction</a></div>
+          <div class="paper-authors">with Victor Chernozhukov and Kaspar Wüthrich.</div>
+          <div class="paper-meta"><span>Proceedings of the National Academy of Sciences</span>, 118(48), 2021</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://dx.doi.org/10.1353/obs.2021.0019" target="_blank" rel="noopener noreferrer">Comments on Leo Breiman's paper 'Statistical Modeling: The Two Cultures' (Statistical Science, 2001, 16(3), 199-231)</a></div>
+          <div class="paper-authors">with Jelena Bradic.</div>
+          <div class="paper-meta"><span>Observational Studies</span>, 7(1):21–31, 2021.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1016/j.jeconom.2021.02.011" target="_blank" rel="noopener noreferrer">Comparing forecasting performance in cross-sections</a></div>
+          <div class="paper-authors">with Ritong Qu and Allan Timmermann.</div>
+          <div class="paper-meta"><span>Journal of Econometrics</span>, 237(2):105–186,023.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1080/01621459.2021.1920957" target="_blank" rel="noopener noreferrer">An Exact and Robust Conformal Inference Method for Counterfactual and Synthetic Controls</a></div>
+          <div class="paper-authors">with Victor Chernozhukov and Kaspar Wüthrich.</div>
+          <div class="paper-authors">Replication code and an R package can be found on <a href="https://github.com/kwuthrich/scinference" target="_blank" rel="noopener noreferrer">here</a>.</div>
+          <div class="paper-meta"><span>Journal of the American Statistical Association</span>, 116(536):1849–1864, 2021. </div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1016/j.jeconom.2021.10.006" target="_blank" rel="noopener noreferrer">Conditional Rotation Between Forecasting Models</a></div>
+          <div class="paper-authors">with Allan Timmermann.</div>
+          <div class="paper-meta"><span>Journal of Econometrics</span>,  231(2):329–347, 2022.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://dx.doi.org/10.1214/19-AOS1932" target="_blank" rel="noopener noreferrer">Testability of high-dimensional linear models with non-sparse structures</a></div>
+          <div class="paper-authors">with Jelena Bradic and Jianqing Fan.</div>
+          <div class="paper-meta"><span>Annals of Statistics</span>, 50(2):615–639, 2022.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1016/j.jeconom.2020.04.029" target="_blank" rel="noopener noreferrer">Likelihood ratio testing in linear state space models: An application to dynamic stochastic general equilibrium models</a></div>
+          <div class="paper-authors">with Ivana Komunjer.</div>
+          <div class="paper-meta"><span>Journal of Econometrics</span>, 218(2):561–586.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1016/j.jeconom.2019.04.033" target="_blank" rel="noopener noreferrer">Variable Selection in Panel Models with Breaks</a></div>
+          <div class="paper-authors">with Simon Smith and Allan Timmermann.</div>
+          <div class="paper-meta"><span>Journal of Econometrics</span>, 212(1), 323–344.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1214/18-EJS1443" target="_blank" rel="noopener noreferrer">Significance testing in non-sparse high-dimensional linear models</a></div>
+          <div class="paper-authors">with Jelena Bradic.</div>
+          <div class="paper-meta"><span>Electronic Journal of Statistics</span>, 12(2), 3312–3364. (2018)</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://proceedings.mlr.press/v75/chernozhukov18a.html" target="_blank" rel="noopener noreferrer">Exact and Robust Conformal Inference Methods for Predictive Machine Learning With Dependent Data</a></div>
+          <div class="paper-authors">with Victor Chernozhukov and Kaspar Wüthrich.</div>
+          <div class="paper-meta"><span>In COLT 2018 (PMLR 75)</span>, pp. 732–749.</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1080/01621459.2017.1356319" target="_blank" rel="noopener noreferrer">Linear hypothesis testing in dense high-dimensional linear models</a></div>
+          <div classs="paper-authors">with Jelena Bradic.</div>
+          <div class="paper-meta"><span>Journal of the American Statistical Association</span>, 113(524), 1583–1600. (2018)</div>
+        </li>
+        <li class="paper">
+          <div class="paper-title"><a href="https://doi.org/10.1007/s11749-017-0556-0" target="_blank" rel="noopener noreferrer">Comments on 'High-dimensional simultaneous inference with the bootstrap by Dezeure, Buhlmann and Zhang'</a></div>
+          <div class="paper-authors">with Jelena Bradic.</div>
+          <div class="paper-meta"><span>TEST</span>, 26(4), 720–728. (2017)</div>
+        </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h5><div class="section-heading">Working Papers</div></h5>
+<ul class="list working-papers">
+<li><a href="https://arxiv.org/abs/2310.00786" target="_blank" rel="noopener noreferrer">Semidiscrete optimal transport with unknown costs</a> — with Ilya Ryzhov</li>
+<li><a href="https://arxiv.org/abs/2206.10475" target="_blank" rel="noopener noreferrer">New possibilities in identification of binary choice models with fixed effects</a></li>
+<li><a href="https://arxiv.org/abs/2103.13369" target="_blank" rel="noopener noreferrer">Phase transition of the monotonicity assumption in learning local average treatment effects</a></li>
+<li><a href="https://arxiv.org/abs/2006.03238" target="_blank" rel="noopener noreferrer">Can two forecasts have the same conditional expected accuracy?</a> — with Allan Timmermann</li>
+<li><a href="https://dx.doi.org/10.2139/ssrn.2620552" target="_blank" rel="noopener noreferrer">A simple method for uniform subvector inference of linear instrumental variables models</a></li>
+<li><a href="https://arxiv.org/abs/1912.12213" target="_blank" rel="noopener noreferrer">Minimax semiparametric learning with approximate sparsity</a> — with Jelena Bradic, Victor Chernozhukov and Whitney Newey</li>
+<li><a href="https://dx.doi.org/10.2139/ssrn.3479463" target="_blank" rel="noopener noreferrer">Do any economists have superior forecasting skills?</a> — with Ritong Qu and Allan Timmermann</li>
+<li><a href="https://arxiv.org/abs/1910.10382" target="_blank" rel="noopener noreferrer">How well can we learn large factor models without assuming strong factors?</a></li>
+<li><a href="https://arxiv.org/abs/1805.06855" target="_blank" rel="noopener noreferrer">Learning non-smooth models: instrumental variable quantile regressions and related problems</a></li>
+<li><a href="https://arxiv.org/abs/1905.00744" target="_blank" rel="noopener noreferrer">Sparsity Double Robust Inference of Average Treatment Effects</a> — with Jelena Bradic and Stefan Wager</li>
+<li><a href="https://arxiv.org/abs/1812.10820" target="_blank" rel="noopener noreferrer">Debiasing and t-tests for synthetic control inference on average causal effects</a> — with Victor Chernozhukov and Kaspar Wüthrich</li>
+<li><a href="https://dx.doi.org/10.2139/ssrn.2665374" target="_blank" rel="noopener noreferrer">High-dimensional panel data with time heterogeneity: estimation and inference</a></li>
+<li><a href="https://dx.doi.org/10.2139/ssrn.2810298" target="_blank" rel="noopener noreferrer">Testing for common factors in large factor models</a></li>
+<li><a href="https://arxiv.org/abs/1708.00430" target="_blank" rel="noopener noreferrer">Breaking the curse of dimensionality in regression</a> — with Jelena Bradic</li>
+<li><a href="https://arxiv.org/abs/1610.04580" target="_blank" rel="noopener noreferrer">Two-sample testing in non-sparse high-dimensional linear models</a> — with Jelena Bradic</li>
+<li><a href="https://arxiv.org/abs/1705.01024" target="_blank" rel="noopener noreferrer">A projection pursuit framework for testing general high-dimensional hypothesis</a> — with Jelena Bradic</li>
+<li><a href="https://dx.doi.org/10.2139/ssrn.2220901" target="_blank" rel="noopener noreferrer">Quantile spacings: a simple method for the joint estimation of multiple quantiles without crossing</a> — with Lawrence Schmidt</li>
+<li><a href="#">Tests of forecasting performance and choice of estimation window</a> — with Allan Timmermann</li>
+<li><a href="#">Inference on manifolds</a> — with Ivana Komunjer</li>
+<li><a href="#">Limit theory of filtered historical simulation in GARCH models</a> — with Brendan Beare and Lajos Horvath</li>
+</ul>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      © <span id="year"></span> Yinchu Zhu
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
